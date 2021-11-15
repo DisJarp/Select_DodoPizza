@@ -22,7 +22,7 @@
 #Исполнение:
 
 1) Установка зависимостей -> pip install -r requirements.txt
-2) Команда для запуска -> pytest -v --browser_name=chrome test_dodopizza.py
+2) Команда для запуска -> pytest test_dodopizza.py
 3) Дополнительные флаги -> 
 <li>--browser_name=браузер</li> <li>--links=сайт</li> <li>--count=число</li>
 <i><u>Все флаги не являются обязательными</u></i><
@@ -30,9 +30,9 @@
 
 
 <b>Возможные ошибки</b>
-<li>ValueError: invalid literal for int() with base 10: ''</li>
-<li>Выпадание на пиццу для сборки</li>
+<li>При выборе не москвы, возможны вылеты</li>
+
 
 # --------------------------------
 
-ver. 0.01
+ver. 0.02

@@ -7,7 +7,7 @@ def pytest_addoption(parser):
     parser.addoption('--browser_name', action='store', default="chrome",
                      help="Choose browser: chrome or firefox")
     #Указываем на какой сайт перейдем
-    parser.addoption('--links', action='store', default=StaticParametr.LINK_ONE,
+    parser.addoption('--links', action='store', default=StaticParametr.LINK_TWO,
                      help=f"Send link: {StaticParametr.LINK_ONE} \nand\n {StaticParametr.LINK_TWO}")
     # Указываем количество пиццы
     parser.addoption('--count', action='store', default=3,
@@ -49,4 +49,4 @@ def browser(request):
         raise pytest.UsageError("--browser_name should be chrome or firefox")
     yield browser
     print("\nquit browser..")
-    browser.quit()
+   #browser.quit()
